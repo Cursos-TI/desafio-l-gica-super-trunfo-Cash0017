@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 int main(){
 
 char codigo[5];
@@ -96,8 +98,9 @@ printf("densidade: %.2f\n", densidade2);
 
 if(populacao > populacao2){
     printf("primeira cidade ganha em população \n");
-}else("seguda cidade ganha em população \n");
-
+}else{
+    printf("seguda cidade ganha em população \n");
+}
 if(area > area2){
     printf("a area da primeira cidade ganha em km \n");
 }else{
@@ -123,6 +126,14 @@ if(pontosturisticos > pontosturisticos2){
 }
 
 return 0;
+
+
+
+
+
+
+
+
 
 
 }
