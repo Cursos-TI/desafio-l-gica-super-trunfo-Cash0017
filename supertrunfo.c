@@ -96,34 +96,66 @@ printf("numero de pontos turisticos: %d\n", pontosturisticos2);
 printf("pib Per Capita: %.2f\n", pibpercapita2);
 printf("densidade: %.2f\n", densidade2);
 
-if(populacao > populacao2){
+int atributo;
+
+printf("qual compração deseja fazer? \n");
+printf("1. compara: população \n");
+printf("2. compara: area \n");
+printf("3. compara: pib percapita \n");
+printf("4. compara: densidade \n");
+printf("5. compara: pontos turisticos \n");
+scanf("%d", &atributo);
+
+
+
+switch (atributo)
+{
+case 1:
+   if(populacao > populacao2){
     printf("primeira cidade ganha em população \n");
 }else{
     printf("seguda cidade ganha em população \n");
-}
+} 
+    break;
+case 2:
 if(area > area2){
     printf("a area da primeira cidade ganha em km \n");
 }else{
     printf("a area da segunda cidade ganha em km \n");
 }
-
+   break;
+case 3:
 if(pibpercapita > pibpercapita2){
     printf("o pib percapita da primera cidade ganha \n");
 }else{
     printf("o pib percapita da segunda cidade ganha \n");
 }
-
+   break;
+case 4:
 if(densidade > densidade2){
-    printf("a densidade da primeira cidade ganha \n");
+    printf("a primeira cidade ganha em densidade \n");
 }else{
-    printf("a densidade da segunda cidade ganha \n");
+    printf("a segunda cidade ganha em densidade \n");
 }
-
+   break;
+case 5:
 if(pontosturisticos > pontosturisticos2){
     printf("a primeira cidade ganha em numero de pontos turisticos \n");
 }else{
     printf("a segunda cidade ganha em numero de pontos turisticos \n");
 }
+     break;
+default:
+printf("essa opção não existe \n");
+    break;
+}
+
+
+
+
+
+
+
 
 return 0;
 
