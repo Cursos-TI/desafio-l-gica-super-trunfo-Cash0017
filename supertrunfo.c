@@ -11,6 +11,21 @@ float pib;
 int pontosturisticos;
 float pibpercapita;
 float densidade;
+int opcao;
+
+printf("1. iniciar jogo \n");
+printf("2. sair \n");
+scanf("%d", &opcao);
+
+
+
+
+
+switch (opcao)
+{
+case 1:
+    
+    
 
 
 
@@ -58,7 +73,7 @@ float pib2;
 int pontosturisticos2;
 float pibpercapita2;
 float densidade2;
-
+int atributo;
 
 
 
@@ -96,7 +111,7 @@ printf("numero de pontos turisticos: %d\n", pontosturisticos2);
 printf("pib Per Capita: %.2f\n", pibpercapita2);
 printf("densidade: %.2f\n", densidade2);
 
-int atributo;
+
 
 printf("qual compração deseja fazer? \n");
 printf("1. compara: população \n");
@@ -150,9 +165,14 @@ printf("essa opção não existe \n");
     break;
 }
 
+break;
+case 2:
+printf("saindo....");
 
-
-
+default:
+printf("opção invalida \n");
+    break;
+}
 
 
 

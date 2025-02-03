@@ -3,28 +3,29 @@
 #include <time.h>
 
 int main(){
-int escolhajogador, escolhacomputador;
+char escolhajogador;
+int escolhacomputador;
 srand(time(0));
 
 printf("jogo jokenpo \n");
 printf("escolha as opções \n");
-printf("1. pedra \n");
-printf("2. papel \n");
-printf("3. tesoura \n");
+printf("a. pedra \n");
+printf("b. papel \n");
+printf("c. tesoura \n");
 printf("escolha: ");
-scanf("%d", &escolhajogador);
+scanf("%c", &escolhajogador);
 
 escolhacomputador = rand() % 3 + 1;
 
 switch (escolhajogador)
 {
-case 1:
+case 'a':
     printf("voce escolheu: pedra \n");
     break;
-case 2:
+case 'b':
     printf("voce escolheu: papel \n");
     break;
-case 3:
+case 'c':
     printf("voce escolheu: tesoura \n");
     break;
 default:
@@ -47,9 +48,9 @@ case 3:
 if(escolhacomputador == escolhajogador){
     printf("empate \n");
     
-}else if((escolhajogador == 1) && (escolhacomputador == 3) || 
-          (escolhajogador == 2) && (escolhacomputador ==  1) ||
-           (escolhajogador == 3) && (escolhacomputador == 2))
+}else if((escolhajogador == 'a') && (escolhacomputador == 3) || 
+          (escolhajogador == 'b') && (escolhacomputador ==  1) ||
+           (escolhajogador == 'c') && (escolhacomputador == 2))
 { printf("voce ganhou \n");
 
 }else{
